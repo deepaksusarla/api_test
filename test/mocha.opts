@@ -1,0 +1,6 @@
+--ui bdd
+--reporter spec
+--require test/support/setup
+--check-leaks
+--full-trace
+--recursive
