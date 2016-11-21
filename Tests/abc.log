@@ -1,0 +1,53 @@
+describe
+
+
+  API testing
+it
+{ [RequestError: Error: getaddrinfo ENOTFOUND tes-staging.rentomojo.com tes-staging.rentomojo.com:80]
+  name: 'RequestError',
+  message: 'Error: getaddrinfo ENOTFOUND tes-staging.rentomojo.com tes-staging.rentomojo.com:80',
+  cause: 
+   { [Error: getaddrinfo ENOTFOUND tes-staging.rentomojo.com tes-staging.rentomojo.com:80]
+     code: 'ENOTFOUND',
+     errno: 'ENOTFOUND',
+     syscall: 'getaddrinfo',
+     hostname: 'tes-staging.rentomojo.com',
+     host: 'tes-staging.rentomojo.com',
+     port: 80 },
+  error: 
+   { [Error: getaddrinfo ENOTFOUND tes-staging.rentomojo.com tes-staging.rentomojo.com:80]
+     code: 'ENOTFOUND',
+     errno: 'ENOTFOUND',
+     syscall: 'getaddrinfo',
+     hostname: 'tes-staging.rentomojo.com',
+     host: 'tes-staging.rentomojo.com',
+     port: 80 },
+  options: 
+   { url: 'http://tes-staging.rentomojo.com/api/Location',
+     json: true,
+     callback: [Function: RP$callback],
+     transform: undefined,
+     simple: true,
+     resolveWithFullResponse: false,
+     transform2xxOnly: false },
+  response: undefined }
+    1) Location API
+
+
+  0 passing (175ms)
+  1 failing
+
+  1) API testing Location API:
+     ReferenceError: done is not defined
+      at test.js:67:16
+      at tryCatcher (/Users/Admin/node_modules/request-promise/node_modules/bluebird/js/release/util.js:16:23)
+      at Promise._settlePromiseFromHandler (/Users/Admin/node_modules/request-promise/node_modules/bluebird/js/release/promise.js:510:31)
+      at Promise._settlePromise (/Users/Admin/node_modules/request-promise/node_modules/bluebird/js/release/promise.js:567:18)
+      at Promise._settlePromise0 (/Users/Admin/node_modules/request-promise/node_modules/bluebird/js/release/promise.js:612:10)
+      at Promise._settlePromises (/Users/Admin/node_modules/request-promise/node_modules/bluebird/js/release/promise.js:687:18)
+      at Async._drainQueue (/Users/Admin/node_modules/request-promise/node_modules/bluebird/js/release/async.js:138:16)
+      at Async._drainQueues (/Users/Admin/node_modules/request-promise/node_modules/bluebird/js/release/async.js:148:10)
+      at Immediate.Async.drainQueues [as _onImmediate] (/Users/Admin/node_modules/request-promise/node_modules/bluebird/js/release/async.js:17:14)
+
+
+
