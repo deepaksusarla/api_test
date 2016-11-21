@@ -1,0 +1,24 @@
+{
+  "name": "rm_api_test_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepaksusarla/api_test.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deepaksusarla/api_test/issues"
+  },
+  "homepage": "https://github.com/deepaksusarla/api_test#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  }
+}

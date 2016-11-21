@@ -4,7 +4,7 @@
 var supertest = require('supertest');
 var api = supertest('https://www.node.rentomojo.com/api');
 var rp = require('request-promise');
-var querystring = require('querystring');
+// var querystring = require('querystring');
 var constants=require('../API_Utils/API_URLS.js')
 var urls= new constants();
 test_api= function(){
