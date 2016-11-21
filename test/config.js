@@ -1,13 +1,9 @@
-'use strict';
 
-const config = {};
+export const BASE_URL = process.env.BASE_URL || 'https://www.rentomojo.com';
 
-config.BASE_URL = process.env.BASE_URL || 'https://www.rentomojo.com';
-config.API = `${config.BASE_URL}/api`;
+export const API = `${BASE_URL}/api`;
 
-config.API_URLS = {
+export const API_URLS = {
   LOCATION: '/locations',
-  LOGIN: '/RMUsers/rmlogin?include=user'
+  LOGIN: '/RMUsers/rmlogin?include=user',
 };
-
-module.exports = config;

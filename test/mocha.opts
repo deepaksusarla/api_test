@@ -1,5 +1,7 @@
 --ui bdd
 --reporter spec
+--compilers js:babel-register
+--require babel-polyfill
 --require test/support/setup
 --check-leaks
 --full-trace
