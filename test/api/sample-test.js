@@ -1,7 +1,8 @@
-import chai, {expect} from 'chai';
-import {API, API_URLS} from '../config';
+import chai, { expect } from 'chai';
+import { API } from '../config';
+import { API_URLS } from '../api-urls';
 import locationData from '../api-data/locations';
-import {deepak as loginCreds} from '../api-data/login-creds';
+import { deepak as deepakDetails } from '../api-data/login-creds';
 
 const chaiHttp = chai.request(API);
 
@@ -23,9 +24,9 @@ describe('Sample test suite', () => {
 
   it('logs in using email/password', async() => {
     const res = await chaiHttp.post(API_URLS.LOGIN)
-      .send(loginCreds);
+      .send(deepakDetails.creds);
     const { body } = res;
-    expect(body.user.id).to.equal(13673);
+    expect(body.user.id).to.equal(deepakDetails.userId);
   });
 
 });

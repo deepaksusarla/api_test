@@ -1,4 +1,7 @@
 export const deepak = {
-  mobileOrEmail: 'deepak.susarla@rentomojo.com',
-  password: 'abcd1234'
+  userId: 13673,
+  creds: {
+    mobileOrEmail: 'deepak.susarla@rentomojo.com',
+    password: 'abcd1234',
+  },
 };
